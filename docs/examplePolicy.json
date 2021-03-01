@@ -1,0 +1,16 @@
+{
+  "Version": "v1",
+  "Statement": [
+    {
+      "Sid": "StatementDescription",
+      "Effect": "Allow",
+      "Action": ["iam:CreateUser", "iam:UpdateUser", "iam:DeleteUser"],
+      "Resource": "arn:aws:iam:::user/${req:UserName}",
+      "Condition": {
+        "IpAddress": {
+          "req:IpAddress": "10.0.20.0/24"
+        }
+      }
+    }
+  ]
+}
