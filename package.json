@@ -17,5 +17,9 @@
     "authorization"
   ],
   "author": "Vinod kumar sonagara",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "joi": "^17.4.0",
+    "lodash": "^4.17.21"
+  }
 }
