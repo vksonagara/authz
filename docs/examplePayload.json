@@ -1,7 +1,7 @@
 {
-  "action": "iam:CreateUser",
-  "resource": "arn:aws:iam:::user/testuser",
-  "context": {
+  "Action": "iam:CreateUser",
+  "Resource": "arn:aws:iam:::user/testuser",
+  "Context": {
     "req": {
       "IpAddress": "10.0.20.51",
       "UserName": "testuser"
